@@ -1,7 +1,43 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Flex:wght@400;600;800&display=swap");
+html {
+  font-size: 62.5%;
+  font-family: "Roboto Flex", sans-serif;
+}
+
 body,
 h1,
 h2,
 p {
   padding: 0;
   margin: 0;
+}
+
+h1 {
+  font-size: 5rem;
+  font-weight: 600;
+}
+
+.SCHEELS {
+  color: #df1c39;
+  font-weight: 800;
+}
+
+main {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+button {
+  width: 15rem;
+}
+
+ul {
+  list-style-type: none;
+}
+
+li {
+  text-decoration: none;
 }
