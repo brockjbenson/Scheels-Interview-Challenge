@@ -1,6 +1,12 @@
 @import url("https://fonts.googleapis.com/css2?family=Kanit:wght@400;600;800&display=swap");
 html {
   font-size: 62.5%;
+  width: 100%;
+  height: 100svh;
+}
+
+* {
+  box-sizing: border-box;
 }
 
 body,
@@ -13,7 +19,7 @@ li {
 }
 
 body {
-  width: 100vw;
+  width: 100%;
   height: 100svh;
   font-family: "Kanit", sans-serif;
   background: linear-gradient(
@@ -23,11 +29,18 @@ body {
     url("/images/scheels-store-front.jpg");
   background-size: cover;
   background-position: center;
+  overflow-x: hidden;
 }
 
 h1 {
   font-size: 5rem;
   font-weight: 600;
+}
+
+.SCHEELS-header {
+  font-weight: 800;
+  font-size: 5rem;
+  color: #df1c39;
 }
 
 .SCHEELS {
@@ -72,7 +85,6 @@ h1 {
 
 .info-section p {
   font-size: 2rem;
-  line-height: 20px;
 }
 
 main {
@@ -81,6 +93,8 @@ main {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  padding: 0;
+  margin: 0;
 }
 
 button {
@@ -184,10 +198,9 @@ a {
 
 .application-header {
   text-align: center;
-  margin: 5rem;
+  margin-bottom: 5rem;
   padding: 2rem;
-  width: 85rem;
-  border-radius: 10px;
+  width: 100%;
   -webkit-box-shadow: 0px 7px 13px 0px rgba(0, 0, 0, 0.28);
   -moz-box-shadow: 0px 7px 13px 0px rgba(0, 0, 0, 0.28);
   box-shadow: 0px 7px 13px 0px rgba(0, 0, 0, 0.28);
@@ -199,6 +212,13 @@ a {
   );
 
   backdrop-filter: blur(8px);
+}
+
+.info-body p,
+.combined,
+.SCHEELS,
+.COM {
+  font-size: 2rem;
 }
 
 .run-btn {
@@ -232,18 +252,22 @@ a {
     align-items: center;
     padding-inline: auto;
   }
-  .application-header {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: 5rem;
-    padding: 2rem;
-    width: 50rem;
-    margin-inline: auto;
-    border-radius: 10px;
-    -webkit-box-shadow: 0px 7px 13px 0px rgba(0, 0, 0, 0.28);
-    -moz-box-shadow: 0px 7px 13px 0px rgba(0, 0, 0, 0.28);
-    box-shadow: 0px 7px 13px 0px rgba(0, 0, 0, 0.28);
+
+  .SCHEELS-header {
+    font-weight: 800;
+    font-size: 3rem;
+    color: #df1c39;
+  }
+
+  button {
+    width: 15rem;
+  }
+
+  .info-body p,
+  .combined,
+  .SCHEELS,
+  .COM {
+    font-size: 1.5rem;
   }
 
   .output-container {
@@ -260,6 +284,20 @@ a {
     border-radius: 10px;
   }
 
+  h1 {
+    font-size: 3rem;
+  }
+
+  .info-header h2 {
+    font-size: 2rem;
+  }
+
+  .info-body p,
+  .combined,
+  .COM {
+    font-size: 1.5rem;
+  }
+
   .info-section {
     width: 50rem;
     height: fit-content;
@@ -273,18 +311,74 @@ a {
     box-shadow: 0px 7px 13px 0px rgba(0, 0, 0, 0.28);
     border-radius: 10px;
   }
+}
 
-  .info-header {
+@media screen and (max-width: 400px) {
+  main {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-inline: auto;
+    overflow: hidden;
+  }
+
+  button {
+    width: 13rem;
+    font-size: 1rem;
+  }
+
+  .SCHEELS-header {
+    font-weight: 800;
+    font-size: 2rem;
+    color: #df1c39;
+  }
+
+  .output-container {
     display: flex;
     align-items: center;
     justify-content: center;
+    width: 90%;
+    height: 35rem;
+    padding: 2rem;
+    -webkit-box-shadow: 0px 7px 13px 0px rgba(0, 0, 0, 0.28);
+    -moz-box-shadow: 0px 7px 13px 0px rgba(0, 0, 0, 0.28);
+    box-shadow: 0px 7px 13px 0px rgba(0, 0, 0, 0.28);
+    margin: 3rem;
+    border-radius: 10px;
+  }
+
+  .info-section {
+    width: 90%;
+    height: fit-content;
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-bottom: 5rem;
+    -webkit-box-shadow: 0px 7px 13px 0px rgba(0, 0, 0, 0.28);
+    -moz-box-shadow: 0px 7px 13px 0px rgba(0, 0, 0, 0.28);
+    box-shadow: 0px 7px 13px 0px rgba(0, 0, 0, 0.28);
+    border-radius: 10px;
+  }
+
+  h1 {
+    font-size: 2rem;
   }
 
   .info-header h2 {
-    font-size: 3rem;
+    font-size: 2rem;
   }
 
-  .info-section p {
-    font-size: 2rem;
+  li {
+    font-size: 1rem;
+  }
+
+  .info-body p,
+  .combined,
+  .SCHEELS,
+  .COM {
+    font-size: 1rem;
   }
 }
