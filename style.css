@@ -37,7 +37,7 @@ h1 {
 
 .info-section {
   width: 85rem;
-  height: 15rem;
+  height: fit-content;
   padding: 2rem;
   display: flex;
   flex-direction: column;
@@ -262,7 +262,7 @@ a {
 
   .info-section {
     width: 50rem;
-    height: 20rem;
+    height: fit-content;
     padding: 2rem;
     display: flex;
     flex-direction: column;
