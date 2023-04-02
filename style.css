@@ -7,7 +7,8 @@ html {
 body,
 h1,
 h2,
-p {
+p,
+li {
   padding: 0;
   margin: 0;
 }
@@ -20,6 +21,38 @@ h1 {
 .SCHEELS {
   color: #df1c39;
   font-weight: 800;
+}
+
+.info-section {
+  width: 85rem;
+  height: 15rem;
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin-bottom: 5rem;
+  -webkit-box-shadow: 0px 7px 13px 0px rgba(0, 0, 0, 0.28);
+  -moz-box-shadow: 0px 7px 13px 0px rgba(0, 0, 0, 0.28);
+  box-shadow: 0px 7px 13px 0px rgba(0, 0, 0, 0.28);
+  border-radius: 10px;
+}
+
+.COM {
+  font-weight: 800;
+}
+
+.info-header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.info-header h2 {
+  font-size: 3rem;
+}
+
+.info-section p {
+  font-size: 2rem;
 }
 
 main {
@@ -36,8 +69,85 @@ button {
 
 ul {
   list-style-type: none;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  overflow-y: scroll;
 }
 
 li {
   text-decoration: none;
+  margin: 0.5rem;
+  font-size: 2rem;
+}
+
+.output-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 85rem;
+  height: 35rem;
+  padding: 2rem;
+  -webkit-box-shadow: 0px 7px 13px 0px rgba(0, 0, 0, 0.28);
+  -moz-box-shadow: 0px 7px 13px 0px rgba(0, 0, 0, 0.28);
+  box-shadow: 0px 7px 13px 0px rgba(0, 0, 0, 0.28);
+  margin: 3rem;
+  border-radius: 10px;
+}
+
+button {
+  font-size: 2rem;
+  padding-block: 1rem;
+  font-weight: 800;
+  border: none;
+  margin: 1rem;
+  transition: 200ms;
+  border-radius: 0.5rem;
+  -webkit-box-shadow: 0px 7px 8px -3px rgba(0, 0, 0, 0.24);
+  -moz-box-shadow: 0px 7px 8px -3px rgba(0, 0, 0, 0.24);
+  box-shadow: 0px 7px 8px -3px rgba(0, 0, 0, 0.24);
+}
+
+button:hover {
+  scale: 105%;
+  cursor: pointer;
+}
+
+button:active {
+  scale: 98%;
+}
+
+a {
+  font-weight: bold;
+}
+
+.combined {
+  color: blue;
+  font-size: 2rem;
+  font-weight: 800;
+  text-decoration: underline;
+}
+
+.application-header {
+  margin: 5rem;
+  padding: 1rem;
+  padding-inline: 5rem;
+  border-radius: 10px;
+  -webkit-box-shadow: 0px 7px 13px 0px rgba(0, 0, 0, 0.28);
+  -moz-box-shadow: 0px 7px 13px 0px rgba(0, 0, 0, 0.28);
+  box-shadow: 0px 7px 13px 0px rgba(0, 0, 0, 0.28);
+}
+
+.run-btn {
+  background-color: black;
+  color: #df1c39;
+}
+
+.reset-btn {
+  background-color: #df1c39;
+  color: white;
 }
